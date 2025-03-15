@@ -10,23 +10,31 @@
     <h1>Atividade Dom</h1>
 
     <h2>Contador de Cliques</h2>
-    <input type="button" id="butao1" value= "incrementar" onclick="button1()"></input>
-    <input type="button" id="butao2" value= "decrementar" onclick="button2()"></input><br><br>
-    <span id="count"></span>
+    <button id="incrementar" onclick="incrementar()">Incrementar</button>
+    <button id="decrementar" onclick="decrementar()">Decrementar</button><br><br>
+    <span id="count">0</span>
 
     <hr>
+
     <h2>Digite um texto:</h2><br>
-    <input type="text" placeholder="texto">
-    <p id="contador">Contador:</p>
+    <input type="text" id="texto" placeholder="Digite e pressione ENTER">
+    <p id="contador">Contador de caracter: 0</p>
+    <div id="texto-dinamico"></div>
 
     <hr>
 
     <h2>Adicionar novos elementos</h2>
+    <select id="tipo-lista">
+        <option value="ul">Lista Não Ordenada</option>
+        <option value="ol">Lista Ordenada</option>
+    </select>
+    <br></br>
+    <button id="adicionar-item" onclick="adicionarItem()">Adicionar Item</button>
 
-    <button id="lista"> </button>
-    <button id="reset">RESET</button>
+    <hr>
 
-<script src="script.js"></script>
+    <button id="reset" onclick="reset()">RESET</button>
 
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>Adicionar Item à Tabela</h1>
+    <input type="string" id="itemNovo" required placeholder="Adicione um item">
+    <button id="addItem" onclick="adicionarItem()">Adicionar</button>
+
+    <hr>
+
+    <h1>Tabela de itens</h1>
+    <table id="tabelaItens">
+        <thead>
+            <tr>
+                <th><b>Item</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    
+
+    <hr>
+    <h1>Marcar ou Desmarcar o Item</h1>
+
+    <form id="marcarDesmarcar">
+        <label for="item">Escolha o item:</label>
+        <select name="item" id="item">
+            <option value="selecioneItem">Selecione um item</option>
+        </select>
+        <button>Marcar</button>
+        <button>Desmarcar</button>
+        <button>Remover</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+<style>
+    table, th, td{
+        border: 1px, solid black;
+    }
+</style>
+</html>
